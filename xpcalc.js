@@ -7,14 +7,18 @@ Hooks.on("renderCombatTracker", (tracker, html, data) => {
 	data.combat.combatants.forEach(combatant => {
 		let tok = combatant.token;
 
-		switch (tok.disposition) {
-			case TOKEN_DISPOSITIONS.FRIENDLY:
-				allies++;
-				break;
-			case TOKEN_DISPOSITIONS.HOSTILE:
-				let xp = combatant.actor.data.data.details.xp.value;
-				totalXP += xp;
-				enemies++;
+		if (tok?.disposition? !== undefined) {
+			switch (tok.disposition) {
+				case TOKEN_DISPOSITIONS.FRIENDLY:
+					allies++;
+					break;
+				case TOKEN_DISPOSITIONS.HOSTILE:
+					if (combatant.actor?.data?.data?.details?.xp?.value !== undefined) {
+						let xp = combatant.actor.data.data.details.xp.value;
+						totalXP += xp;
+						enemies++;
+					}
+			}
 		}
 	});
 	if (allies > 0 && totalXP > 0) {
