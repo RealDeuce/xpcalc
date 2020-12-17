@@ -11,9 +11,7 @@
 			"path": "lang/en.json"
 		}
 	],
-	"systems": ["dnd5e"],
 	"esmodules": ["./xpcalc.js"],
-	"socket": false,
 	"styles": [],
 	"packs": [],
 	"manifest": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/module.json",
