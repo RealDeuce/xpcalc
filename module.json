@@ -1,0 +1,23 @@
+{
+	"name": "xpcalc",
+	"title": "XP Calculator",
+	"description": "Calculates XP for combat",
+	"version": "0.1",
+	"author": "Deuce",
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"systems": ["dnd5e"],
+	"esmodules": ["./xpcalc.js"],
+	"socket": false,
+	"styles": [],
+	"packs": [],
+	"manifest": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/module.json",
+	"download": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/ezroller.zip",
+	"minimumCoreVersion": "0.7.2",
+	"compatibleCoreVersion": "0.7.5"
+}
