@@ -23,6 +23,6 @@ Hooks.on("renderCombatTracker", (tracker, html, data) => {
 	});
 	if (allies > 0 && totalXP > 0) {
 		let cc = html.find("#combat-controls");
-		cc.before("XP: " + totalXP + " (" + enemies + ") / " + allies + " = " + (totalXP / allies) + " (" + Math.floor(totalXP / allies / 2) + ")");
+		cc.before("XP: " + totalXP + " (" + enemies + ") / " + allies + " = " + Math.floor(totalXP / allies) + " (" + Math.floor(totalXP / allies / 2) + ")");
 	}
 });
