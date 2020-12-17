@@ -17,7 +17,7 @@
 	"styles": [],
 	"packs": [],
 	"manifest": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/module.json",
-	"download": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/ezroller.zip",
+	"download": "https://raw.githubusercontent.com/RealDeuce/xpcalc/master/xpcalc.zip",
 	"minimumCoreVersion": "0.7.2",
 	"compatibleCoreVersion": "0.7.8"
 }
