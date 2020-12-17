@@ -1,5 +1,6 @@
 Hooks.on("renderCombatTracker", (tracker, html, data) => {
         if (!game.user.isGM) return;
+	if (data.combat?.combatants === undefined) return;
 	let allies = 0;
 	let enemies = 0;
 	let totalXP = 0;
