@@ -7,7 +7,7 @@ Hooks.on("renderCombatTracker", (tracker, html, data) => {
 	data.combat.combatants.forEach(combatant => {
 		let tok = combatant.token;
 
-		if (tok?.disposition? !== undefined) {
+		if (tok?.disposition !== undefined) {
 			switch (tok.disposition) {
 				case TOKEN_DISPOSITIONS.FRIENDLY:
 					allies++;
